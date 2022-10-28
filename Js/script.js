@@ -48,5 +48,3 @@ scissor.addEventListener("click", function () {
   computerSelection = getComputerChoice();
   console.log(playRound(playerSelection, computerSelection));
 });
-
-console.log("check");
