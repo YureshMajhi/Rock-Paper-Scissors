@@ -1,4 +1,74 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  background-color: tomato;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.info {
+  text-align: center;
+  margin: 2.5rem 0 3rem 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.info p:nth-child(2) {
+  font-style: italic;
+}
+
+.show {
+  text-align: center;
+}
+
+.show > div {
+  position: relative;
+  border: 2px solid rgb(192, 131, 131);
+  height: 8rem;
+  width: 9rem;
+  display: inline-block;
+  margin: 0 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.show div p {
+  position: absolute;
+  top: -1.5rem;
+}
+
+.gameplay {
+  font-size: 7rem;
+}
+
+.round-info {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.controller {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.controller p {
+  margin: 3rem 0 1rem;
+}
+
+.controller button {
+  width: 6rem;
+  height: 6rem;
+  background-color: white;
+  border: 2px solid rgb(146, 127, 127);
+  border-radius: 3px;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.controller button:active {
+  opacity: 0.6;
 }

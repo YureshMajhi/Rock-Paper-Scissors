@@ -13,8 +13,10 @@ function Game() {
   if (round == 5) {
     if (playerScore > computerScore) {
       console.log("Victory! You won the game.");
-    } else {
+    } else if (computerScore > playerScore) {
       console.log("Defeat! You lost the game.");
+    } else {
+      console.log("So close! It's a tie. Want to play again?");
     }
   }
 }
