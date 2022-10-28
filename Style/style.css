@@ -40,7 +40,8 @@ header {
   top: -1.5rem;
 }
 
-.gameplay {
+.gameplayP,
+.gameplayC {
   font-size: 7rem;
 }
 
@@ -69,6 +70,31 @@ header {
   cursor: pointer;
 }
 
+.controller button:last-of-type {
+  display: block;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  width: 10rem;
+  height: 2.5rem;
+  background-color: tomato;
+  color: rgb(0, 70, 0);
+  font-weight: 500;
+}
+
 .controller button:active {
   opacity: 0.6;
+}
+
+.result-section {
+  position: relative;
+}
+#result {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: tomato;
+  font-weight: 700;
+  font-size: 2rem;
+  word-spacing: 0.5rem;
+  white-space: nowrap;
 }
