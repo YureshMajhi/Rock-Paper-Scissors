@@ -4,25 +4,35 @@
   font-family: "Raleway", sans-serif;
 }
 
-header {
-  background-color: tomato;
+:root {
+  --theme-color: tomato;
+}
+
+.show,
+.show > div {
+  text-align: center;
+}
+
+header,
+.info,
+.round-info,
+.controller {
   text-align: center;
   font-size: 1.5rem;
+}
+
+header {
+  background-color: var(--theme-color);
+  text-align: center;
   padding: 1rem 0;
 }
 
 .info {
-  text-align: center;
   margin: 2.5rem 0 3rem 0;
   font-weight: 500;
-  font-size: 1.5rem;
 }
 .info p:nth-child(2) {
   font-style: italic;
-}
-
-.show {
-  text-align: center;
 }
 
 .show > div {
@@ -33,7 +43,6 @@ header {
   display: inline-block;
   margin: 0 20px;
   border-radius: 5px;
-  text-align: center;
 }
 .show div p {
   position: absolute;
@@ -46,14 +55,7 @@ header {
 }
 
 .round-info {
-  text-align: center;
   margin-top: 1.2rem;
-  font-size: 1.2rem;
-}
-
-.controller {
-  text-align: center;
-  font-size: 1.2rem;
 }
 
 .controller p {
@@ -76,7 +78,7 @@ header {
   font-size: 1.2rem;
   width: 10rem;
   height: 2.5rem;
-  background-color: tomato;
+  background-color: var(--theme-color);
   color: rgb(0, 70, 0);
   font-weight: 500;
 }
@@ -92,7 +94,7 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: tomato;
+  color: var(--theme-color);
   font-weight: 700;
   font-size: 2rem;
   word-spacing: 0.5rem;
